@@ -3,7 +3,7 @@ ruby "2.5.3"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails"
 gem "rails", "5.2.2"
-gem "pg", "~> 0.18.4"
+gem "pg", "~> 1.1.3"
 # Use SCSS for stylesheets
 gem "sass-rails", "~> 5.0"
 # Use Uglifier as compressor for JavaScript assets
@@ -13,11 +13,14 @@ gem "coffee-rails", "~> 4.2.2"
 # See https://github.com/rails/execjs#readme for more supported runtimes
 gem "therubyracer", platforms: :ruby
 
-gem "mountain_view"
+gem "mountain_view", git: 'https://github.com/ChristineP2/mountain_view', ref: 'c545a5c'
 gem "haml-rails", "~> 1.0.0"
 gem "bourbon", "~> 4.2.6"
 
 gem "rails_12factor", group: :production
+
+
+gem "tzinfo-data", platforms: [:mingw, :x64_mingw, :mswin]
 
 # Use ActiveModel has_secure_password
 # gem "bcrypt", "~> 3.1.7"
